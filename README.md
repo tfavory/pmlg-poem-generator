@@ -1,19 +1,23 @@
 # pmlg-poem-generator
 
 This is a poem generator trained with Gated Recurrent Units (GRU) on a corpus of poems including those in:
-* Poems every child should know
-* Some other poems
-* And some more poems
+* [Poems Every Child Should Know](http://www.gutenberg.org/ebooks/16436), by Mary E. Burt
+* [Poems](http://www.gutenberg.org/ebooks/52546), by Thomas Hall Shastid
+* [Poems of Progress and New Thought Pastels](http://www.gutenberg.org/ebooks/3228), by Ella Wheeler Wilcox
+* [Poems Teachers Ask For](http://www.gutenberg.org/ebooks/18909)
+* [Poems Teachers Ask For, Book Two](http://www.gutenberg.org/ebooks/19469)
+* [The Pied Piper of Hamelin, and Other Poems](http://www.gutenberg.org/ebooks/42850), by Robert Browning
 
 Most of the code comes from [Tensorflow's text generation tutorial](https://github.com/tensorflow/tensorflow/blob/r1.10/tensorflow/contrib/eager/python/examples/generative_examples/text_generation.ipynb).
 
 Please refer to the notebook for an overview of the results.
 
-## To do next
+## Improvement ideas
 
 ### Short term:
 * Clean the corpus
 * Find more data
+* Save a model
 * Try LSTM
 * Train a model based on sequences of words instead of characters
 
@@ -22,8 +26,6 @@ Please refer to the notebook for an overview of the results.
 * Train a model backward: from the last word to the first
 
 The idea is to generate the rhymes first, and then write the lines from the last word to the first. This process makes sure that the generated poems rhyme.
-
-* Learn to count syllables?
 
 ### Long term goals
 * Generate other kind of text (Haiku, magazines, articles, books...)
