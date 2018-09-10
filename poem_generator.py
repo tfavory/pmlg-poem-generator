@@ -45,16 +45,9 @@ class Model(tf.keras.Model):
 		self.batch_sz = batch_size
 		self.embedding = tf.keras.layers.Embedding(vocab_size, embedding_dim)
 		if tf.test.is_gpu_available():
-			self.gru = tf.keras.layers.CuDNNGRU(self.units, 
-												return_sequences=True, 
-												return_state=True, 
-												recurrent_initializer='glorot_uniform')
+			self.gru = tf.keras.layers.CuDNNGRU(self.units, return_sequences=True, return_state=True, recurrent_initializer='glorot_uniform')
 		else:
-			self.gru = tf.keras.layers.GRU(self.units, 
-											return_sequences=True, 
-											return_state=True, 
-											recurrent_activation='sigmoid', 
-											recurrent_initializer='glorot_uniform')
+			self.gru = tf.keras.layers.GRU(self.units, return_sequences=True, return_state=True, recurrent_activation='sigmoid', recurrent_initializer='glorot_uniform')
 		self.fc = tf.keras.layers.Dense(vocab_size)
 		
 	def call(self, x, hidden):
