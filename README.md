@@ -15,15 +15,16 @@ Please refer to the notebook for an overview of the results.
 ## Improvement ideas
 
 ### Short term:
-* Clean the corpus
+* Clean the corpus (done)
 * Find more data
 * Save a model
 * Try LSTM
-* Train a model based on sequences of words instead of characters
+* Train a model based on sequences of words instead of characters (memory issues)
 
 ### Middle term goals:
-* Create a rhyme generator
+* Create a rhyme generator (done, LSTM)
 * Train a model backward: from the last word to the first
+* Try Bi-directional LSTMs
 
 The idea is to generate the rhymes first, and then write the lines from the last word to the first. This process makes sure that the generated poems rhyme.
 
