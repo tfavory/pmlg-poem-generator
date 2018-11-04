@@ -15,6 +15,7 @@ Please refer to the notebook for an overview of the results.
 ## Improvement ideas
 
 ### Short term:
+* Upload decent weigths (URGENT)
 * Find more data
 * Train a model based on sequences of words instead of characters (memory issues)
 
