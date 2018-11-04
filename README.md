@@ -17,14 +17,14 @@ Please refer to the notebook for an overview of the results.
 ### Short term:
 * Clean the corpus (done)
 * Find more data
-* Save a model
-* Try LSTM
+* Save a model (done)
+* Try LSTM (done, but not convincing)
 * Train a model based on sequences of words instead of characters (memory issues)
 
 ### Middle term goals:
-* Create a rhyme generator (done, LSTM)
-* Train a model backward: from the last word to the first
-* Try Bi-directional LSTMs
+* Create a rhyme generator (done)
+* Train a model backward: from the last word to the first (done)
+* Try Bi-directional LSTMs (done but not conform to [Tensorflow's text generation tutorial](https://github.com/tensorflow/tensorflow/blob/r1.10/tensorflow/contrib/eager/python/examples/generative_examples/text_generation.ipynb).)
 
 The idea is to generate the rhymes first, and then write the lines from the last word to the first. This process makes sure that the generated poems rhyme.
 
