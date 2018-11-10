@@ -12,17 +12,38 @@ Most of the code comes from [Tensorflow's text generation tutorial](https://gith
 
 Please refer to the notebook for an overview of the results.
 
+## How to generate poetry?
+
+Use the pretrained model called poem_generator.
+
+ - In the same folder, save the notebook called poem_generator.ipynb and the 12 npy files. 
+ - Run poem_generator.ipynb
+ 
+Disclaimer: Saving the model with 12 npy files is inefficient. Some improvements are on the way.
+
+
+## How to train your own model
+
+(optional) if you want to train a model on your own text files:
+
+ - Find some text, called the file 'poem_corpus.txt'
+ - Run corpus_cleaner.py. It should create two text files: 'corpus.txt', and 'rhymes.txt'.
+ 
+To train a model:
+
+ - Run 'rhyme_model.ipynb'. It creates 6 npy files that store the weigths of your rhyme model.
+ - Run 'poem_model.ipynb'
+ - Run 'poem_generator.ipynb'
+ 
+ 
 ## Improvement ideas
 
 ### Short term:
-* Upload decent weigths (URGENT)
-* Find more data
+* Try data from [GutenTag](http://www.cs.toronto.edu/~jbrooke/gutentag/)
 * Train a model based on sequences of words instead of characters (memory issues)
 
 ### Middle term goals:
 * Try Bi-directional models (failed to train a model conform to [Tensorflow's text generation tutorial](https://github.com/tensorflow/tensorflow/blob/r1.10/tensorflow/contrib/eager/python/examples/generative_examples/text_generation.ipynb).)
-
-The idea is to generate the rhymes first, and then write the lines from the last word to the first. This process makes sure that the generated poems rhyme.
 
 ### Long term goals
 * Style transfert
