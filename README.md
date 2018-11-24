@@ -16,10 +16,10 @@ Please refer to the notebook for an overview of the results.
 
 Use the pretrained model called poem_generator.
 
- - In the same folder, save the notebook called poem_generator.ipynb and the 12 npy files. 
+ - In the same folder, save the notebook called poem_generator.ipynb and the 2 npy files: model_poems.npy, and model_rhymes.npy 
  - Run poem_generator.ipynb
  
-Disclaimer: Saving the model with 12 npy files is inefficient. Some improvements are on the way.
+Disclaimer: Saving the model with npy files is probably less efficient than loading a Checkpoint, but I did not manage to do it
 
 
 ## How to train your own model
@@ -39,6 +39,7 @@ To train a model:
 ## Improvement ideas
 
 ### Short term:
+* Update weights with another corpus
 * Try data from [GutenTag](http://www.cs.toronto.edu/~jbrooke/gutentag/)
 * Train a model based on sequences of words instead of characters (memory issues)
 
