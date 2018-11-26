@@ -1,6 +1,6 @@
 # pmlg-poem-generator
 
-This is a poem generator trained with Gated Recurrent Units (GRU) on a corpus of poems including:
+This is a poem generator trained with Gated Recurrent Units (GRU) on a corpus of poems including those in:
 * [Poems Every Child Should Know](http://www.gutenberg.org/ebooks/16436), by Mary E. Burt
 * [Poems](http://www.gutenberg.org/ebooks/52546), by Thomas Hall Shastid
 * [Poems of Progress and New Thought Pastels](http://www.gutenberg.org/ebooks/3228), by Ella Wheeler Wilcox
